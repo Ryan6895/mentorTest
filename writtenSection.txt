@@ -1,28 +1,40 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+To reinforce meaning or information in html documents and keep clear organization.
 
 2. What is the box model?
+The box model is actually part of every element in html and helps with margin, padding, borders and sizing of all elements.
 
 3. What is the difference between IDs and Classes?
+Id's are meant to be used for one specific item, where classes are supposed to be used for multiple items such as having multiple buttons that you want to look the same.
 
 4. What does the z-index do?
+The index tells you how items will be seen stacked on top of each other.
 
 5. Summarize what the keyword 'this' is used for?
+this is used to define context when using methods inside of an object.
 
 6. What is a callback?
+a callback function is a function that is passed in as an arguement to another function
 
 7. What is a closure?
+A closure is the local variables for a function - kept alive after the function has returned
 
 8. How does prototype work?
+prototypes work similar to classes and you can augment and make your own prototypes to use
 
 9. What is MVC?
+Is a pattern that separates applications into three separate components (model,view, controller) the model represents the data, view displays the model data and the controller lets you manipulate the data.
 
 10. What is the component lifecycle?
+The lifecycle component lets you make changes while the component is changing such as in react when itwillmount or didmount
 
 11. What is REST?
+standard set of rules for communicating API's
 
 12. Name three ways of getting data from the URL using express
+queries, params,
 
 create table users (
 id serial,
@@ -33,9 +45,17 @@ email varchar(255)
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
+SELECT * FROM users
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+INSERT INTO users (name, email)
+VALUES(Ryan Clark, Ryan@email.com)
 
 -Update the newly created user's name to 'Bobby Boy':
+UPDATE users
+SET name = 'Bobby Boy'
+WHERE name = 'Ryan Clark'
 
 -Delete the newly updated user:
+DELETE FROM users
+WHERE name = 'Bobby Boy'
